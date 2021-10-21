@@ -4,5 +4,5 @@ var slide = document.getElementById('slide'),
 slide.onchange = function() {
     sliderDiv.innerHTML = this.value;
     var redness = (this.value/100)*255
-    slide.style.background = `rgb(${redness},0,0)`
+    slide.style.background = `rgb(${redness},${255-redness},0)`
 }
